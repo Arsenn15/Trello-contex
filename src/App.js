@@ -4,7 +4,6 @@ import Tasks from "./Components/Tasks";
 import {DataTasksList} from "./Data";
 import {TasksContext} from "./Context";
 
-
 function App() {
     const [tasks, setTasks] = useState([])
 
