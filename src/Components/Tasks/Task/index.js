@@ -4,7 +4,7 @@ import {useTasksContext} from "../../../Context";
 
 export default function Task({task}) {
 
-    const {handleEditTask} = useTasksContext()
+    const {handleEditTask, handleDeleteTask} = useTasksContext()
     const [isShowEditButton, setIsShowEditButton] = useState(false)
     const [newTitle, setNewTitle] = useState(task.title)
     const [newDescription, setNewDescription] = useState(task.description)
@@ -30,7 +30,7 @@ export default function Task({task}) {
                             <input onChange={(e) => setNewTitle(e.target.value)}
                                    defaultValue={newTitle}
                                    type="text"/>
-                            <input defaultValue={newDescription}
+                            <textarea defaultValue={newDescription}
                                    onChange={(e) => setNewDescription(e.target.value)}
                                    type="text"/>
 
@@ -58,6 +58,7 @@ export default function Task({task}) {
                     :
                     <div className={"button"}>
                         <button className={"editButton"} onClick={(e) => setIsShowEditButton(!isShowEditButton)}>Edit</button>
+                        <button className={"deleteButton"} onClick={(e) => handleDeleteTask(task._id)}>Delete</button>
                     </div>
             }
         </div>

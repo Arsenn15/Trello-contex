@@ -43,9 +43,9 @@ body{
 }
 
 .editMod{
-    width: 300px;
-    height: 200px;
-    background-color: gray;
+    width: 500px;
+    height: 400px;
+    background-color: #417e67;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,36 @@ body{
     gap: 7px;
 
 }
+.editMod input{
+    width: 80%;
+    height: 5%;
+    background-color: #add2c4;
+    border-radius: 10px;
+}
 
+.editMod select{
+    background-color: #add2c4;
+    border-radius: 10px;
+    width: 80%;
+    height: 5%;
+
+}
+
+.editMod button{
+    background-color: #add2c4;
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+}
+
+.editMod textarea{
+    background-color: #add2c4;
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    width: 80%;
+    height: 20%;
+}
 
 
 
@@ -83,5 +112,17 @@ body{
     width: 100px;
     border: none;
     background-color: #408c79;
-    margin-left: 80px;
+}
+
+.deleteButton{
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    background-color: #408c79;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

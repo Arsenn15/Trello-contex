@@ -37,9 +37,15 @@ function App() {
         ])
     }
 
+    const handleDeleteTask = (id) => {
+        setTasks(tasks.filter(task => {
+            return task._id !== id
+        }))
+    }
+
 
     return (
-        <TasksContext.Provider value={{handleEditTask, handleAddTask}}>
+        <TasksContext.Provider value={{handleEditTask, handleAddTask, handleDeleteTask}}>
             <div className={"container"}>
                 <Tasks
                     status={"blocked"}

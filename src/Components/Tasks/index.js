@@ -31,17 +31,17 @@ export default function Tasks({filteredTask, status}) {
             {
                 isShowAddButton
                     ?
-                    <div className={"button"}>
+                    <div>
                         <button className={"addButton"} onClick={(e) => setIsShowAddButton(!isShowAddButton)}>ADD</button>
                     </div>
                     :
                     <div className={"editMod-box"}>
 
                             <div className={"editMod"}>
-                                <input onChange={(e) => setAddTitle(e.target.value)}
+                                <input placeholder={"Title"} onChange={(e) => setAddTitle(e.target.value)}
                                        defaultValue={addTitle}
                                        type="text"/>
-                                <input defaultValue={addDescription}
+                                <textarea placeholder={"description"} defaultValue={addDescription}
                                        onChange={(e) => setAddDescription(e.target.value)}
                                        type="text"/>
 
