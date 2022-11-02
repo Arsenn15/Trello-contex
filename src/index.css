@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #86a481;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.tasksContainer{
+    width: 300px;
+    height: 100%;
+    border: gray;
+    border-radius: 10px;
+    background-color: #6d9b83;
+    color: black;
+    padding: 10px;
+
+}
+
+.TaskContainer{
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+.editMod-box{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.38);
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editMod{
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 7px;
+
+}
+
+
+
+
+.description{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 1px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.addButton{
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    background-color: #408c79;
+    margin-left: 90px;
+}
+
+.editButton{
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    background-color: #408c79;
+    margin-left: 80px;
 }
